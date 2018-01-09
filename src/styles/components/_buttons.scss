@@ -1,0 +1,30 @@
+.button {
+    transition: all 1s cubic-bezier(.19,1,.22,1);
+
+    position: relative;
+
+    cursor: pointer;
+
+    padding: 20px 50px;
+
+    margin: 50px auto 0;
+
+    font-size: 18px;
+
+    color: $green;
+
+
+    border: 3px solid $green;
+
+    transform: skew(-20deg);
+
+    &:hover {
+        color: $white;
+
+        background-color: $green;
+    }
+
+    &__text {
+        transform: skew(20deg);
+    }
+}

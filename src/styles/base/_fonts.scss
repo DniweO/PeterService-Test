@@ -1,0 +1,15 @@
+@each $font-name, $font-folder, $file-name, $font-weight, $font-style in ("Roboto-Condensed", robotocondensed, 'robotocondensed-bolditalic', 700, italic),
+        ("Roboto-Condensed", robotocondensed, 'robotocondensed-italic', 400, italic),
+        ("PT-Sans", pt-sans, 'pt-sans-regular', 400, normal) {
+    @font-face {
+        font-family: $font-name;
+        font-weight: $font-weight;
+        font-style: $font-style;
+
+        src: url(../../fonts/#{$font-folder}/#{$file-name}.eot); /* IE9 Compat Modes */
+        src: url(../../fonts/#{$font-folder}/#{$file-name}.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+        url(../../fonts/#{$font-folder}/#{$file-name}.woff2) format('woff2'), /* Modern Browsers */
+        url(../../fonts/#{$font-folder}/#{$file-name}.woff) format('woff'), /* Modern Browsers */
+        url(../../fonts/#{$font-folder}/#{$file-name}.ttf) format('truetype');
+    }
+}

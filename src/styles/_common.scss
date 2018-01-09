@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.row-flex {
+    display: flex;
+
+    &_wrap {
+        flex-wrap: wrap;
+    }
+
+    &_center {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.black-and-white {
+    filter: grayscale(100%);
+
+    transition: .3s;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

@@ -11,6 +11,8 @@ html {
     height: 100%; // http://tutorialzine.com/2016/03/quick-tip-the-best-way-to-make-sticky-footers/
 
     background-color: transparent;
+
+    transition: .3s all;
 }
 
 body {
@@ -25,6 +27,10 @@ body {
     background-color: #fff;
 
     align-items: stretch;
+}
+
+html>body>svg {
+    height: 0;
 }
 
 header.header {

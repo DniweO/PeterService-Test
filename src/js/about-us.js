@@ -1,28 +1,30 @@
 (function($){
     $(document).ready(function(){
+        var brandItem = $('.js-brand-item');
+        var videoPopup = $('.js-video-popup');
 
-       $('.js-brand-item').hover(function() {
-           $('.js-brand-item').addClass('black-and-white');
+       brandItem.hover(function() {
+           brandItem.addClass('black-and-white');
            $(this).removeClass('black-and-white');
        }, function () {
-           $('.js-brand-item').removeClass('black-and-white');
+           brandItem.removeClass('black-and-white');
        });
 
 
-       $(".js-show-video").click(function () {
+       $('.js-show-video').click(function () {
             $('.js-video-popup').addClass('show');
-       })
+       });
 
-        $(".js-close-video").click(function () {
+        $('.js-close-video').click(function () {
             $('.js-video-popup').removeClass('show');
             pauseFullScreenVideo();
-        })
+        });
 
-        $(".js-show-material-popup").click(function () {
+        $('.js-show-material-popup').click(function () {
             $('.js-material-popup').addClass('show');
-        })
+        });
 
-        $(".js-close-material-popup").click(function () {
+        $('.js-close-material-popup').click(function () {
             $('.js-material-popup').removeClass('show');
         })
 

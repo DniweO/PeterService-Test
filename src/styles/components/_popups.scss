@@ -117,6 +117,14 @@
 
         padding-right: 100px;
 
+        color: #373637;
+
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
         &:not(:last-child) {
             margin-bottom: 45px;
         }
@@ -165,7 +173,7 @@
         position: absolute;
 
         top: 10px;
-        right: 5px;
+        right: 10px;
 
         width: 24px;
         height: 24px;
@@ -173,6 +181,8 @@
         &::before {
             position: absolute;
             content: "";
+
+            left: 50%;
 
             height: 100%;
 
@@ -185,11 +195,20 @@
             position: absolute;
             content: "";
 
+            left: 50%;
+
             height: 100%;
 
             border-right: 4px solid $dark-white;
 
             transform: rotate(-45deg);
+        }
+
+        &:hover {
+            &::before,
+            &::after {
+                border-color: $green;
+            }
         }
     }
 }

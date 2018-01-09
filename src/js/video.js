@@ -36,10 +36,10 @@ function onYouTubePlayerAPIReady() {
     fullSceenVideo  = new YT.Player('full-scrn-video', {});
 }
 
-function onPlayerReady(event){
+function onPlayerReady(){
     player.mute();
 }
 
-function pauseFullScreenVideo(event){
+function pauseFullScreenVideo(){
     fullSceenVideo.pauseVideo();
 }

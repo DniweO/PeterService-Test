@@ -112,6 +112,7 @@
     }
 
     &__item {
+        transition: .2s;
         display: flex;
         align-items: center;
 
@@ -123,6 +124,7 @@
 
         &:hover {
             text-decoration: underline;
+            color: $green;
         }
 
         &:not(:last-child) {

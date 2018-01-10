@@ -1,4 +1,6 @@
 .video-banner {
+    z-index: 0; //Edge video blur fix
+
     position: relative;
 
     overflow: hidden;
